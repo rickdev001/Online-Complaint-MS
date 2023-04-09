@@ -6,6 +6,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&family=Roboto&family=Rubik+Pixels&display=swap');
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -43,14 +44,19 @@ body {
 	-webkit-font-smoothing: antialiased !important;
 	
 }
+p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+}
 
 
 
 h1 strong{
 	font-weight: 900;
+    
 }
 h2{
-	;
+	
 	line-height: 20px;
 	margin:  0;
 }
@@ -64,10 +70,7 @@ h5{
 	font-weight: 700;
 	line-height: 20px;
 }
-p{
-font-family: 'Open Sans', sans-serif;
-font-size:0.93em;
-}
+
 
 
 a{ 
@@ -95,6 +98,7 @@ p.intro{
 	margin: 14px 0;
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
 }
 .relative
 {
@@ -172,9 +176,10 @@ text-align:justify;
 /*	TYPOGRAPHY
 ------------------------------*/
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6{
+.h1, .h2, .h3, .h4, .h5 {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
+    text-transform: capitalize;
 }
 
 /*	BUTTON
@@ -184,6 +189,7 @@ h1, h2, h3, h4, h5, h6,
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     border-radius: 8px;
+    margin-top: 1em;
 }
 .btn:focus,.btn:active {
     outline: none;
@@ -220,6 +226,18 @@ h1, h2, h3, h4, h5, h6,
 .btn-bar a{
 	margin-right: 10px;
 }
+button.dropbtn,a:hover{
+background-color: transparent !important;
+}
+button.dropbtn{
+    color: #3434edea !important;
+}
+button.btn.btn-primary.btn-block{
+    background: #030389ea !important;
+ 
+   padding: 10px;
+}
+
 
 /*	PRELOADER
 ------------------------------*/
@@ -312,19 +330,19 @@ div.preloader {
 }
 
 
-/*	RAMSH-STYLE STARTS HERE
-------------------------------*/
+
  
 /* Navigation */
 .nim-menu{
-	padding: 10px;
+	padding: 10px ;
 	transition: all 0.8s;
-        background:#000;
+        background:#000000;
         border-bottom:none;
         transition:all 0.4s ease-in;
         -webkit-transition:all 0.4s ease-in;
         -moz-transition:all 0.4s ease-in;
         -ms-transition:all 0.4s ease-in;
+       
          
 }
 
@@ -351,7 +369,13 @@ color:#fff;
 	
 	background-color: transparent;
 	font-weight: 700;
+    
+   
         
+}
+
+a.page-scroll:hover{
+    color: #030389ea !important;
 }
 
 .navbar-toggle {
@@ -394,7 +418,7 @@ color:#fff;
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
-	//background-attachment: fixed;
+	background-attachment: fixed;
         height:auto;
         height:100%;
         position:relative;
