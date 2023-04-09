@@ -183,14 +183,14 @@ h1, h2, h3, h4, h5, h6,
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 8px;
 }
 .btn:focus,.btn:active {
     outline: none;
     color: #ffffff;
 }
 .btn-custom{
-	border-radius: 3px;
+	border-radius: 6px;
 	padding: 0.8em 1.8em;
 	color: #fff;
 	font-weight: 700;
@@ -860,7 +860,7 @@ font-family: 'Roboto Slab', serif;
 
 .footer-links a:hover
 { 
-    color: #fa5454;
+    color: #030389ea;
 }
 
 .footer-links a:first-child 
