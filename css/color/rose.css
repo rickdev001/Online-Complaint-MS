@@ -1,13 +1,20 @@
 
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AUTHOR : Vijayan PP
+PROJECT :Nim
+VERSION : 1.1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
 
 .themecolor
 {
-    color:#030389ea;;/*Defines the theme color*/
+    color:#f8198d;/*Defines the theme color*/
 }
 
 .theme_background_color,#downloadbt:hover
 {
-    background-color:#030389ea; /*Defines the theme bakcground color*/
+    background-color:#f8198d; /*Defines the theme bakcground color*/
 }
 
 .borderColor
@@ -16,11 +23,11 @@
 }
 .nim-menu.navbar-default .navbar-nav > li > a:hover
  {
-color:#030389ea;
+color:#f8198d;
 }
 .social li a:hover
 {
-    color:#030389ea;
+    color:#f8198d;
 }
 .sub-footer
 {
@@ -67,7 +74,7 @@ color:#030389ea;
 
 .sectionTitle hr
 {
-  border-color:#030389ea; 
+  border-color:#f8198d; 
 }
 
 .sectionTitle .line{
@@ -84,20 +91,20 @@ ol.type li a:hover{ color:#f8198d;}
 .ramsh-menu.navbar-default .navbar-nav > li > a:hover,a.fa.fa-angle-down:hover,.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus
 {
-    color:#030389ea;
+    color:#f8198d;
 }
 
 .navbar-toggle
 {
  
- color:#030389ea;
+ color:#f8198d;
 }
 
 .owl-theme .owl-controls .owl-page.active span, 
 .owl-theme .owl-controls.clickable .owl-page:hover span,#contactbtn:hover {
 	
-	background:#030389ea;
+	background:#f8198d;
 }
 .owl-theme .owl-controls .owl-page.active span{
-	background:#030389ea;
+	background:#f8198d;
 }

@@ -15,9 +15,10 @@
 
 namespace League\OAuth2\Client\Provider;
 
-require 'vendor/autoload.php';
+require __DIR__ . 'vendor/autoload.php';
 
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
+use League\OAuth2\Client\Provider\GoogleUser;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;

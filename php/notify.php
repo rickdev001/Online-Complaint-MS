@@ -1,24 +1,23 @@
 <?php
 // Email Submit
-// Note: filter_var() requires PHP >= 5.2.0
-if ( isset($_POST['email'])  && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
- 
-  // detect & prevent header injections
-  $test = "/(content-type|bcc:|cc:|to:)/i";
-  foreach ( $_POST as $key => $val ) {
-    if ( preg_match( $test, $val ) ) {
-      exit;
+if (isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    // Sanitize email to prevent header injections
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    
+    // Construct email headers
+    $headers = "From: $email\r\n" .
+               "Reply-To: $email\r\n" .
+               "X-Mailer: PHP/" . phpversion();
+    
+    // Send email
+    $recipient = "neilohene@gmail.com"; // Replace with your email
+    $subject = "New message from website contact form";
+    $message = "Email: $email";
+    
+    if (mail($recipient, $subject, $message, $headers)) {
+        echo "Your message has been sent!";
+    } else {
+        echo "Oops! Something went wrong.";
     }
-  }
-
-$headers = 'From: '  . '<' . $_POST["email"] . '>' . "\r\n" .
-    'Reply-To: ' . $_POST["email"] . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-  //
-  mail( "vijayanpp02@gmail.com",$_POST["email"], $headers );
- 
-  //      ^
-  //  Replace with your email 
 }
 ?>

@@ -1,6 +1,8 @@
 <?php
 
-$conn = mysqli_connect("localhost","id1382631_cmsnitc17","rootroot","id1382631_cmsnitc17");
+// $conn = mysqli_connect("localhost","root","dbsm","id1382631_cmsnitc17");
+include 'connection.php';
+
 if(isset($_GET['usercode'])){
 
 	$sql="UPDATE `student` SET `active` = 'y' WHERE `student`.`email` ='".$_GET['usercode']."'";
@@ -14,7 +16,7 @@ if(isset($_GET['usercode'])){
 
 if(isset($_GET['activated'])){
 	echo '<script type=text/javascript> alert("Activation Successful!!!")</script>';
-						header("Refresh : 0; URL=https://ajayram017.000webhostapp.com/index.html");
+						header("Refresh : 0; URL=http://localhost:3000/");
 }
 else{
 	echo 'Cant Login ...:(';

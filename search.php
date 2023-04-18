@@ -9,7 +9,7 @@ if(isset($_POST['search']))
     $cby = $_POST['Cby'];
     
     // connect to mysql
-    include('../connection.php');
+    include('connection.php');
     
     // mysql search query
     $query = "SELECT `cid`, `Cby` FROM `complaint` WHERE `cid` = $cid LIMIT 1";

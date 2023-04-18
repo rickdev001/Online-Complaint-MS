@@ -259,9 +259,6 @@ echo  '<td><a href="forward_mail.php?mail='.$temp['SEmail'].'">Mail </a></td></t
   																	<option value="discard">discard</option> 
   																	</td>';
 
-                                                        //echo  '<td>'.$temp['Cby'].'</td>'; 
-                                                         // echo  '<td><a href="index.php?forwardId='.$temp['cid'].'">Forward</a></td>'; 
-                                                       // echo  '<td><a href="index.php?EditId='.$temp['cid'].'">edit</a></td>'; 
                                                         echo  '<td><input type="hidden" name="hidden_cid" value="'.$temp['cid'].'"><input type="submit" name="edit" value="Edit" style="text-decoration:none;"></td></form>';
 							
                                                         echo  '<td><a href="index.php?deleteId='.$temp['cid'].'">Delete </a></td>';
@@ -568,17 +565,6 @@ echo  '<td><a href="forward_mail.php?mail='.$temp['SEmail'].'">Mail </a></td></t
                                         
                                             
                                     }
-
-
-
-
-                                    //edit status starts here
-
-                                    //edit status
-                    //sent email checking
-                                 
-                                    //  sent email ends here
-
 
 
                                     if(isset($_GET['forwardId']))

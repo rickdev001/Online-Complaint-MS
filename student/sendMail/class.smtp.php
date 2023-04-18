@@ -1060,7 +1060,7 @@ class SMTP
      * need to read anything else.
      * @access protected
      * @return string
-     */
+     **/
     protected function get_lines()
     {
         // If the connection is bad, give up straight away

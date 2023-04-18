@@ -16,7 +16,6 @@ body {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-
 p {
 	margin: 0;
 	line-height: 1.6;
@@ -85,33 +84,3 @@ p {
 	font-family: monospace;
 
 }
-.nav li{
-	transition:.4s linear; 
-	font-size:22px;
-	font-weight:bold;
-   }
-   .nav li:hover{
-	background-color: rgba(146, 174, 179, 1); 
-	
-   }
-   td{color:blue;}
-   input[type="text"]{
-	color:white;
-   }
-   td{color:blue;}
-   input[type="password"]{
-	color:white;
-   }
-   input[type="email"]{
-	color:white;
-   }
-   .modal-title{color:blue;
-	font-weight:bold;
-  }
-  .modal{border-radius:0px;}
-
-
-  textarea{
-
-	color:white !important;
-  }

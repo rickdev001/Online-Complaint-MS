@@ -1,14 +1,22 @@
 <?php
-$_SESSION["userId"] = "24";
-//$conn = mysql_connect("localhost","root","root","complaint_nitc14");
-include('connection.php');
-mysql_select_db("complaint_nitc14",$conn);
-if(count($_POST)>0) {
-$result = mysql_query("SELECT *from student WHERE rollno='" . $_SESSION["rollno"] . "'");
-$row=mysql_fetch_array($result);
-if($_POST["currentPassword"] == $row["password"]) {
-mysql_query("UPDATE student set password='" . $_POST["newPassword"] . "' WHERE userId='" . $_SESSION["userId"] . "'");
-$message = "Password Changed";
-} else $message = "Current Password is not correct";
+session_start();
+require_once 'connection.php';
+$db = mysqli_select_db($conn, 'rick');
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $currentPassword = mysqli_real_escape_string($conn, $_POST['currentPassword']);
+    $newPassword = mysqli_real_escape_string($conn, $_POST['newPassword']);
+
+    $query = "SELECT * FROM student WHERE rollno='" . $_SESSION['rollno'] . "'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+
+    if (password_verify($currentPassword, $row['password'])) {
+        $query = "UPDATE student SET password='" . password_hash($newPassword, PASSWORD_DEFAULT) . "' WHERE userId='" . $_SESSION['userId'] . "'";
+        mysqli_query($conn, $query);
+        $message = "Password Changed";
+    } else {
+        $message = "Current Password is not correct";
+    }
 }
 ?>

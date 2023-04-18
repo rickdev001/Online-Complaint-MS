@@ -1,6 +1,6 @@
 <?php
 
-	$conn = mysqli_connect("localhost","root","","complaint system management") or die("data base not connected");
+	$conn = mysqli_connect("localhost","root","Sertrick98","FinalProject") or die("data base not connected");
 
 
 ?>

@@ -28,7 +28,7 @@
             <div style="color: white;
             padding: 15px 50px 5px 50px;
             float: right;
-            font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+            font-size: 16px;"> Last access : 30 May 2022 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
@@ -36,7 +36,7 @@
                 <ul class="nav" id="main-menu">
 				    <li class="text-center"><img src="assets/img/find_user.png" class="user-image img-responsive"/></li>
 				
-                    <li><a  href="index.html"><i class="fa fa-backward fa-2x"></i>Back To dachboard</a></li>
+                    <li><a  href="index.html"><i class="fa fa-backward fa-2x"></i>Back To dashboard</a></li>
 					
                     <li><a  href="index.html"><i class="fa fa-dashboard fa-2x"></i> List All Employee</a></li>
                     

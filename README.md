@@ -1,1 +1,8 @@
-# Online-Complaint-MS
+Tech Stack;
+1.HTML5
+2.CSS3
+3.Javascript
+4.PHP
+5.Google Fonts
+6.SQL
+7.Boostrap 4

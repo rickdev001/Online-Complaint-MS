@@ -540,7 +540,7 @@ function show_forward_form(){
          <h3 align="center">Complaint Registration Form !</h3>
         </div>
         <div class="modal-body">
-           <form action="../createcomplaintt.php" method="POST">
+           <form action="../createcomplaint.php" method="POST">
       
         
         
@@ -561,7 +561,7 @@ class="form-control" required="">
            <select id="type" name="type"
 class="form-control" required="">
           
-          <option value="Hostel Related issues">Hostel Related issues</option>
+          <option value="Hostel">Hostel</option>
             <option value="Bullying">Bullying</option>
             <option value="Harrassment">Harassment</option>
             <option value="Academics">Academics</option>

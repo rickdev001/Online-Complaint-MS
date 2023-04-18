@@ -45,5 +45,5 @@
 		header("Refresh : 0; URL=sforget.html");
 		//echo "CONFORM PASSWORD OT MATCHED";
 	}
-}
+
 	?>

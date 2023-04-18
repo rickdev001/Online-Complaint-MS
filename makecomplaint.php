@@ -1,5 +1,4 @@
 <?php
-//$conn = mysqli_connect("localhost","root","root","complaint_nitc17") or die("data base not connected");
 include('connection.php');
 
 	$rollno = $_POST['rollno'];
@@ -13,17 +12,14 @@ include('connection.php');
 	$sql="select rollno from student where rollno='$rollno'";
 	$res=mysqli_query($conn,$sql);
 	$count=mysqli_num_rows($res);
-	//echo $count;
+
 	if($password==$cpassword)
 	{
-		//echo $password;
-	//echo $cpassword;
-	//echo$rollno;
-	//echo$name;
+		
    if($count>0)
     {
     	echo '<script type=text/javascript> alert("you are already registered!!!!!......login Now.")</script>';
-          header("Refresh : 0; URL=index.html");
+          header("Location: index.html");
     }
     else{
 
@@ -31,8 +27,8 @@ include('connection.php');
 	   if ($conn->query($sql1) === TRUE) 
 	   {
        echo '<script type=text/javascript> alert("Registered successfully!!!!!......login Now.")</script>';
-       header("Refresh : 0; URL=index.html");
-}
+	   header("Location: index.html");
+	}
      }
      } 
 

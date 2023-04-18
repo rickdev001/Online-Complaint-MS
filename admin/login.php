@@ -2,6 +2,7 @@
 
     //$conn = new mysqli('localhost','root','root','complaint_nitc17');
 include('../connection.php');
+
     if(isset($_POST['admin_login']))
     {
         $mail = trim($_POST['email']);
@@ -22,9 +23,7 @@ include('../connection.php');
             header('location:index.php?loginDone');
 
         }else{
-
-            echo 'No result Found ...';
-            echo '<a href="../index.html">Back to home page </a>';        
-        }
+            echo '<script type=text/javascript> alert(" Invalid login !!!!!..Try Again")</script>';
+            header("Location: ../index.html");        }
     }
 ?>

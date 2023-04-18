@@ -21,20 +21,20 @@
 					if(mysqli_query($conn,$update_password))
 					{
 						echo '<script type=text/javascript> alert("Password Updated Sucessfully!!!")</script>';
-						header("Refresh : 0; URL=student/index.php?loginDone");
+						header("Location: student/index.php?loginDone");
 					//echo "update_password_sucessfully";
 					}
 					else
 					{
 						echo '<script type=text/javascript> alert("Error While Updating!!!")</script>';
-						header("Refresh : 0; URL=student/index.php?loginDone");
+						header("Location: student/index.php?loginDone");
 						//echo "Query not execute";
 					}
 			}
 			else
 			{
 				echo '<script type=text/javascript> alert("old Password Not Correct!!!")</script>';
-				header("Refresh : 0; URL=student/index.php?loginDone");
+				header("Location: student/index.php?loginDone");
 				//echo "Sorry !!! YOUR CURRENT PASSWORD IS NOT MATCH WITH DATA BASE";
 			}
 		
@@ -44,7 +44,7 @@
 	else
 	{
 		echo '<script type=text/javascript> alert("New Password & confirmPassword  Not Matched!!!")</script>';
-		header("Refresh : 0; URL=student/index.php?loginDone");
+		header("Location: student/index.php?loginDone");
 		//echo "CONFORM PASSWORD OT MATCHED";
 	}
 }

@@ -24,7 +24,7 @@
         }else{
 
             echo '<script type=text/javascript> alert(" Invalid caretaker !!!!!..Try Again")</script>';
-          header("Refresh : 0; URL=../index.html");
+          header("Location: ../index.html");
            // echo '<a href="../index.html">Back to home page </a>';  
 
 
